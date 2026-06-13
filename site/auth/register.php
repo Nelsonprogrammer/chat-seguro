@@ -139,7 +139,7 @@ if(isset($_POST["register_step3"])){
                 <span class="material-symbols-outlined text-3xl">lock</span>
             </div>
             <h2 class="text-2xl font-bold">Criar conta</h2>
-            <p class="text-sm opacity-90 mt-1">Cerulean Chat - Comunicação segura</p>
+            
         </div>
         
         <div class="p-6">
@@ -283,10 +283,7 @@ if(isset($_POST["register_step3"])){
                     <p class="text-xs text-gray-400 mt-1">Mínimo 6 caracteres</p>
                 </div>
                 
-                <div class="mb-6 p-3 rounded-xl bg-blue-50 text-blue-700 text-xs flex items-center gap-2">
-                    <span class="material-symbols-outlined text-sm">shield</span>
-                    Suas chaves criptográficas RSA (2048 bits) serão geradas automaticamente!
-                </div>
+               
                 
                 <div class="flex gap-3">
                     <button type="button" onclick="window.location.href='register.php?step=2'" class="px-6 py-3 bg-gray-100 text-gray-700 rounded-xl font-semibold hover:bg-gray-200 transition flex items-center gap-2">
@@ -309,10 +306,7 @@ if(isset($_POST["register_step3"])){
                 <button onclick="window.location.href='login.php'" class="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white py-3 rounded-xl font-semibold hover:opacity-90 transition flex items-center justify-center gap-2">
                     <span class="material-symbols-outlined text-sm">login</span> Fazer login
                 </button>
-                <div class="mt-4 p-3 rounded-xl bg-green-50 text-green-700 text-xs flex items-center gap-2">
-                    <span class="material-symbols-outlined text-sm">key</span>
-                    Chaves RSA e Diffie-Hellman geradas com segurança!
-                </div>
+                
             </div>
             
             <?php endif; ?>
@@ -320,10 +314,7 @@ if(isset($_POST["register_step3"])){
         </div>
     </div>
     
-    <!-- Footer -->
-    <div class="text-center mt-4">
-        <p class="text-xs text-white/70">© 2026 MUNGUAMBE • NHANCALE • USSENE</p>
-    </div>
+
 </div>
 
 <script>
