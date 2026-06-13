@@ -416,13 +416,7 @@ if(isset($_POST["login"])){
 
 <div class="container-custom">
     <div class="card">
-        <div class="card-header">
-            <div class="logo">
-                <i class="fas fa-lock"></i>
-            </div>
-            <h2>Bem-vindo de volta</h2>
-            <p>Entre para aceder às suas mensagens seguras</p>
-        </div>
+       
         
         <div class="card-body">
             
@@ -482,10 +476,7 @@ if(isset($_POST["login"])){
                 </div>
             </form>
             
-            <div class="demo-hint">
-                <i class="fas fa-info-circle"></i> <strong>Demo:</strong> Utilize "12345" ou "nelson@email.com"<br>
-                <span style="font-size: 11px;">Palavra-passe: a que definiu no registo</span>
-            </div>
+           
             
         </div>
     </div>
