@@ -978,7 +978,6 @@ $is_in_chat = ($current_contact || $current_group);
 </div>
 
 <!-- Footer Fixo -->
-<div class="fixed bottom-3 right-3 z-50"><div class="bg-slate-800/80 backdrop-blur-sm text-slate-400 text-xs px-3 py-1.5 rounded-full shadow-lg hover:bg-slate-800/90 transition-all duration-300"><span class="font-mono tracking-wide">@2026_MUNGUAMBE_NHANCALE_USSENE</span></div></div>
 
 <script>
 // ============================================
