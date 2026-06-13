@@ -68,6 +68,7 @@ function decrypt_message($encrypted_message, $session_key_encrypted, $from_user,
 ===================================================== */
 
 // Buscar grupos do usuário
+// Buscar grupos do usuário
 function getUserGroups($user_id) {
     global $conn;
     $stmt = $conn->prepare("
@@ -76,7 +77,7 @@ function getUserGroups($user_id) {
                (SELECT COUNT(*) FROM group_messages WHERE group_id = g.id) as message_count,
                (SELECT message FROM group_messages WHERE group_id = g.id ORDER BY created_at DESC LIMIT 1) as last_message,
                (SELECT created_at FROM group_messages WHERE group_id = g.id ORDER BY created_at DESC LIMIT 1) as last_activity
-        FROM groups g
+        FROM `groups` g
         JOIN group_members gm ON gm.group_id = g.id
         WHERE gm.user_id = ?
         GROUP BY g.id
