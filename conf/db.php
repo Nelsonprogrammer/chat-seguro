@@ -1,8 +1,17 @@
 <?php
-$host = "localhost";
-$dbname = "secure_messenger";
-$user = "root";
-$password = "";
 
-$conn = new mysqli($host, $user, $password, $dbname);
+$host = "junction.proxy.rlwy.net";
+$port = 3306;
+$dbname = "railway";
+$user = "root";
+$password = "JHRDpWikaPlSJcyiOikFpgKpzPkacmxJ";
+
+// conexão com porta
+$conn = new mysqli($host, $user, $password, $dbname, $port);
+
+// verificar conexão
+if ($conn->connect_error) {
+    die("Falha na conexão: " . $conn->connect_error);
+}
+
 ?>
