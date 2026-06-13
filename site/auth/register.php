@@ -102,7 +102,7 @@ if(isset($_POST["register_step3"])){
         if($stmt->execute()){
             unset($_SESSION['temp_reg']);
             $_SESSION['register_success'] = true;
-            header("location: register.php?step=success");
+            header("location: login.php");
             exit();
         } else {
             $error_message = "Erro ao criar utilizador: " . $stmt->error;
